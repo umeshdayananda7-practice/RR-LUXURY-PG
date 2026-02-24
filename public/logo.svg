@@ -1,0 +1,22 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rr-bg" x1="30" y1="26" x2="228" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D7D72" />
+      <stop offset="1" stop-color="#1F2A37" />
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="224" height="224" rx="56" fill="url(#rr-bg)" />
+  <rect x="32" y="32" width="192" height="192" rx="42" stroke="#F8F2E8" stroke-opacity="0.35" stroke-width="4" />
+  <text
+    x="128"
+    y="148"
+    fill="#F8F2E8"
+    font-family="Georgia, serif"
+    font-size="88"
+    font-weight="700"
+    text-anchor="middle"
+    letter-spacing="4"
+  >
+    RR
+  </text>
+</svg>

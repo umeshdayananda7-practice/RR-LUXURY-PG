@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --brand-bg: #f6f8fb;
+  --brand-ink: #101827;
+  --brand-teal: #0a7b74;
+  --brand-copper: #d97706;
+  --brand-card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  color: var(--brand-ink);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(10, 123, 116, 0.14), transparent 30%),
+    radial-gradient(circle at 90% 20%, rgba(217, 119, 6, 0.14), transparent 28%),
+    radial-gradient(circle at 80% 90%, rgba(59, 130, 246, 0.12), transparent 30%),
+    var(--brand-bg);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.glass {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.panel {
+  background: var(--brand-card);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.hover-lift {
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
+}
+
+.section-title {
+  font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2rem);
+}
+
+.mobile-cta {
+  padding-bottom: calc(4.75rem + env(safe-area-inset-bottom));
+}
+
+@media (max-width: 640px) {
+  .mobile-sticky {
+    position: fixed;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    right: 0.75rem;
+    z-index: 60;
+  }
+}
